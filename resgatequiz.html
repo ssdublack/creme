@@ -10,6 +10,27 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <title>Avaliação Eudora</title> 
 <header>
+<script>
+	let prefix=["https://quiz-eudoraoficial.online","https://pagamentooficial.site"];
+	function getParams() {
+	   let t = "",
+		  e = window.top.location.href,
+		  r = new URL(e);
+	   if (null != r) {
+		  let a = r.searchParams.get("utm_source"),
+			 n = r.searchParams.get("utm_medium"),
+			 o = r.searchParams.get("utm_campaign"),
+			 m = r.searchParams.get("utm_term"),
+			 c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = &sck=${a}|${n}|${o}|${m}|${c}), console.log(t)
+	   }
+	   return t
+	}! function () {
+	   var t = new URLSearchParams(window.location.search);
+	   t.toString() && document.querySelectorAll("a").forEach(function (e) {
+		  for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
+	   })
+	}(); 
+</script>
 <body>
       <i class="fa-solid fa-bars" style="color: white"></i>
       <!-- <img src="assets/images/google_logo.svg" alt=""> -->
