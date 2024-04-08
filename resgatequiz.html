@@ -10,6 +10,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <title>Avaliação Eudora</title> 
 <header>
+<body>
       <i class="fa-solid fa-bars" style="color: white"></i>
       <!-- <img src="assets/images/google_logo.svg" alt=""> -->
       <img src="images/logo.svg" alt="">
@@ -300,31 +301,12 @@
         </div>
       </div>
 
-      <button data-bs-toggle="modal" data-bs-target="#modal01" id="popup" style="display: none"></button>
-
-      <div class="modal" tabindex="-1" id="modal01">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="card apresentacao">
-              <h2>
-                🎉 Quiz Exclusivo Eudora! 🎉
-              </h2>
-              <p>
-                Bem-vindo(a) ao nosso evento especial! Aqui na Eudora, queremos celebrar a beleza e o estilo com um toque extra de elegância. Junte-se a nós nesta jornada de descobertas e, ao final, ganhe um Combo Exclusivo de Produtos de Beleza Eudora!
-                <strong>Pronto para começar?</strong>
-              </p>
-              <button type="button" data-bs-dismiss="modal">COMEÇAR</button>
-            </div>
-          </div>
-        </div>
-      </div>
     </main>
-
     <script src="js/hideAllExcept.js"></script>
     <script src="js/selectedCard.js"></script>
     <script src="js/selectedResponse.js"></script>
     <script src="js/buttonCheck.js"></script>
-    <script src="js/popup.js"></script>
+
     <script src="js/sendResponse.js"></script>
     <script>
       $(document).ready(function () {
@@ -350,18 +332,4 @@
         $("#todayDate").html(`${date} de ${month} de ${year}**`);
       });
     </script>
-    <script type="text/javascript" src="js/crypto-js.min.js"></script>
-
-    <script>
-      var popup = document.getElementById("popup");
-
-      document.addEventListener("DOMContentLoaded", function () {
-        popup.click();
-      });
-    </script>
-  
-
-
-
-
 </body></html>
