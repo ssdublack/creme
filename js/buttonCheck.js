@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const resposta1Active = document.querySelector('.resposta1.active');
         const resposta2Active = document.querySelector('.resposta2.active');
 
-        if (enviarRespostaButton && cardGradeActive && resposta1Active) {
+        if (enviarRespostaButton && cardGradeActive && resposta1Active && resposta2Active) {
             // Ativa o botão se todas as condições são atendidas
             enviarRespostaButton.removeAttribute('disabled');
             enviarRespostaButton.classList.add('active');

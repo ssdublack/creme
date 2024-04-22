@@ -23,6 +23,7 @@ function scrollToDown() {
 
 function playAudio(audioPath) {
     var audio = new Audio(audioPath);
+    audio.volume = 0.5;
     audio.play();
 }
 
@@ -33,7 +34,7 @@ function pergunta01() {
     // document.getElementById('saldo').innerHTML = 'R$50,00';
     scrollToTop();
 
-    playAudio('assets/check.mp3');
+    playAudio('sfx/check.mp3');
 }
 
 function pergunta02() {
@@ -43,7 +44,7 @@ function pergunta02() {
     // document.getElementById('saldo').innerHTML = 'R$75,00';
     scrollToTop();
 
-    playAudio('assets/check.mp3');
+    playAudio('sfx/check.mp3');
 }
 
 function pergunta03() {
@@ -53,17 +54,17 @@ function pergunta03() {
     // document.getElementById('saldo').innerHTML = 'R$81,25';
     scrollToTop();
 
-    playAudio('assets/check.mp3');
+    playAudio('sfx/check.mp3');
 }
 
 function pergunta04() {
     removeDiv('pergunta04');
-    document.getElementById("finalizacao").style.display = "block";
+    document.getElementById("pergunta05").style.display = "block";
 
     // document.getElementById('saldo').innerHTML = 'R$100,00';
     scrollToTop();
 
-    playAudio('assets/check.mp3');
+    playAudio('sfx/check.mp3');
 }
 
 function pergunta05() {
@@ -73,5 +74,5 @@ function pergunta05() {
     // document.getElementById('saldo').innerHTML = 'R$100,00';
     scrollToTop();
 
-    playAudio('assets/check.mp3');
+    playAudio('sfx/check.mp3');
 }
